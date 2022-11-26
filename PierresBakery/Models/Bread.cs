@@ -3,7 +3,7 @@ namespace PierresBakery
   public class Bread
   {
     public string TypeOfBread {get; set; }
-    public int NumberOfLoaves{get; }
+    public int NumberOfLoaves{get; set; }
   
     //constructor
     public Bread(string breadType,int quantity)
