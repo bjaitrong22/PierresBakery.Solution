@@ -11,7 +11,8 @@ namespace PierresBakery.TestTools
    public void BreadConstructor_CreatesInstanceOfBread_Bread()
    {
     //Arrange and Act
-    Bread newBread = new Bread("multigrain");
+    int quantity = 1;
+    Bread newBread = new Bread("multigrain",quantity);
 
     //Assert
     Assert.AreEqual(typeof(Bread), newBread.GetType()); 
@@ -22,7 +23,8 @@ namespace PierresBakery.TestTools
    {
     //Arrange
     string type = "Sourdough";
-    Bread newBread = new Bread(type);
+    int quantity = 1;
+    Bread newBread = new Bread(type,quantity);
 
     //Act
     string breadType = newBread.TypeOfBread;
@@ -36,7 +38,8 @@ namespace PierresBakery.TestTools
    {
     //Arrange
     string breadType = "Sourdough";
-    Bread newBread = new Bread(breadType);
+    int quantity = 1;
+    Bread newBread = new Bread(breadType,quantity);
 
     //Act
     string updateBreadType = "Rye";

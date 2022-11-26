@@ -3,11 +3,13 @@ namespace PierresBakery
   public class Bread
   {
     public string TypeOfBread {get; set; }
+    public int NumberOfLoaves{get; }
   
     //constructor
-    public Bread(string breadType)
+    public Bread(string breadType,int quantity)
     {
       TypeOfBread = breadType;
+      NumberOfLoaves = quantity;
     
     }
 
