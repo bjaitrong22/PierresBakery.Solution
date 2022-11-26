@@ -65,5 +65,21 @@ namespace PierresBakery.TestTools
     Assert.AreEqual(quantity,result);
    }
 
+   [TestMethod]
+   public void SetNumberOfLoaves_SetNumberOfLoaves_Int()
+   {
+    //Arrange
+    string breadType = "Sourdough";
+    int quantity = 1;
+    Bread newBread = new Bread(breadType,quantity);
+
+    //Act
+    int updateNumberOfLoaves = 3;
+    newBread.NumberOfLoaves = updateNumberOfLoaves;
+    int result = newBread.NumberOfLoaves;
+
+    //Assert
+    Assert.AreEqual(updateNumberOfLoaves,result);
+   }
   }
 }
