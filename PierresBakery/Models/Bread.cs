@@ -10,8 +10,11 @@ namespace PierresBakery
     {
       TypeOfBread = breadType;
       NumberOfLoaves = quantity;
-    
     }
 
+    public int CostOfBreadOrder()
+    {
+      return 0;
+    }
   }
 }
