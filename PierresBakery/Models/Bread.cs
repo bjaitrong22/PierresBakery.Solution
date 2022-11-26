@@ -14,9 +14,10 @@ namespace PierresBakery
 
     public int CostOfBreadOrder()
     {
-      if (NumberOfLoaves == 1)
+      if (NumberOfLoaves == 1 || NumberOfLoaves == 2)
       {
-        return 5;
+        int cost = NumberOfLoaves * 5;
+        return cost;
       }
       else
       {
