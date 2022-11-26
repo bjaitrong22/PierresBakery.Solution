@@ -2,10 +2,10 @@ namespace PierresBakery
 {
   public class Bread
   {
-    public string TypeOfBread {get;}
+    public string TypeOfBread {get; set; }
   
     //constructor
-    public Bread(string breadType, int quantity)
+    public Bread(string breadType)
     {
       TypeOfBread = breadType;
     

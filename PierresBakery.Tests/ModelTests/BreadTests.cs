@@ -41,7 +41,7 @@ namespace PierresBakery.TestTools
     //Act
     string updateBreadType = "Rye";
     newBread.TypeOfBread = updateBreadType;
-    string result = newBread = newBread.TypeOfBread;
+    string result = newBread.TypeOfBread;
 
     //Assert
     Assert.AreEqual(updateBreadType,result);
