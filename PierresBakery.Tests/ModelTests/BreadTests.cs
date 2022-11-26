@@ -31,5 +31,21 @@ namespace PierresBakery.TestTools
     Assert.AreEqual(type,breadType);
    }
 
+   [TestMethod]
+   public void SetTypeOfBread_SetTypeOfBread_String()
+   {
+    //Arrange
+    string breadType = "Sourdough";
+    Bread newBread = new Bread(breadType);
+
+    //Act
+    string updateBreadType = "Rye";
+    newBread.TypeOfBread = updateBreadType;
+    string result = newBread = newBread.TypeOfBread;
+
+    //Assert
+    Assert.AreEqual(updateBreadType,result);
+   }
+
   }
 }
