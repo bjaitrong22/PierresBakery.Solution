@@ -11,7 +11,7 @@ namespace PierresBakery.TestTools
    public void BreadConstructor_CreatesInstanceOfBread_Bread()
    {
     //Arrange and Act
-    Bread newBread = new Bread();
+    Bread newBread = new Bread("multigrain");
 
     //Assert
     Assert.AreEqual(typeof(Bread), newBread.GetType()); 
