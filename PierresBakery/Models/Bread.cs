@@ -15,7 +15,7 @@ namespace PierresBakery
     public int CostOfBreadOrder()
     {
         int breadBaseCost = 5;
-        int cost = (NumberOfLoaves/3) * 10 + (NumberOfLoaves % 3) * breadBaseCost;
+        int cost = (NumberOfLoaves/2) * 10 + (NumberOfLoaves % 2) * breadBaseCost;
         return cost; 
     } 
   }
