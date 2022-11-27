@@ -16,7 +16,7 @@ namespace PierresBakery
     {
       int cost = 2;
     
-      if (NumberOfPastry == 1 || NumberOfPastry == 2)
+      if (NumberOfPastry < 3)
       {
         cost = NumberOfPastry * cost;
       }
@@ -28,7 +28,7 @@ namespace PierresBakery
       {
         cost = (NumberOfPastry * cost) - 2;
       } 
-      
+
       return cost; 
     }
   }
