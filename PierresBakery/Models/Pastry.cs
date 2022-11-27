@@ -19,16 +19,17 @@ namespace PierresBakery
       if (NumberOfPastry == 1 || NumberOfPastry == 2)
       {
         cost = NumberOfPastry * cost;
-        return cost;
       }
       else if (NumberOfPastry < 6)
       {
         cost = (NumberOfPastry * cost) - 1;
-        return cost;
       }
+      else
       {
-        return 0;
-      }  
+        cost = (NumberOfPastry * cost) - 2;
+      } 
+      
+      return cost; 
     }
   }
 }

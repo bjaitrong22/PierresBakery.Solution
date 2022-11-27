@@ -79,15 +79,15 @@ namespace PierresBakery.TestTools
    }
 
    [TestMethod]
-   public void CostOfPastryOrder_ReturnsCostOfPastryOrder_Int()
+   public void CostOfPastryOrder_ReturnsCostOfOneToTwoPastryOrder_Int()
    {
     //Arrange
     string type = "Choux";
-    int quantity = 2;
+    int quantity = 1;
     Pastry newPastry = new Pastry(type,quantity);
 
     //Act
-    int costOfOnePastry = 4;
+    int costOfOnePastry = 2;
     int result = newPastry.CostOfPastryOrder();
 
     //Assert
@@ -99,15 +99,31 @@ namespace PierresBakery.TestTools
    {
     //Arrange
     string type = "Choux";
-    int quantity = 5;
+    int quantity = 3;
     Pastry newPastry = new Pastry(type,quantity);
 
     //Act
-    int costOfThreeToFivePastry = 9;
+    int costOfThreePastry = 5;
     int result = newPastry.CostOfPastryOrder();
 
     //Assert
-    Assert.AreEqual(costOfThreeToFivePastry,result);
+    Assert.AreEqual(costOfThreePastry,result);
+   }
+
+   [TestMethod]
+   public void CostOfPastryOrder_ReturnsCostOfSixOrMorePastry_Int()
+   {
+    //Arrange
+    string type = "Choux";
+    int quantity = 6;
+    Pastry newPastry = new Pastry(type,quantity);
+
+    //Act
+    int costOfSixPastry = 10;
+    int result = newPastry.CostOfPastryOrder();
+
+    //Assert
+    Assert.AreEqual(costOfSixPastry,result);
    }
   }
 }
