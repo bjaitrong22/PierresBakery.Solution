@@ -10,7 +10,7 @@ namespace PierresBakery.TestTools
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
       //Arrange and Act
-      Pastry newPastry = new Pastry();
+      Pastry newPastry = new Pastry("test");
 
       //Assert
       Assert.AreEqual(typeof(Pastry),newPastry.GetType());
@@ -21,8 +21,7 @@ namespace PierresBakery.TestTools
    {
     //Arrange
     string type = "Flaky";
-    int quantity = 1;
-    Pastry newPastry = new Pastry(type,quantity);
+    Pastry newPastry = new Pastry(type);
 
     //Act
     string PastryType = newPastry.TypeOfPastry;
