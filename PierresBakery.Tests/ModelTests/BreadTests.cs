@@ -119,11 +119,11 @@ namespace PierresBakery.TestTools
    {
     //Arrange
     string breadType = "Sourdough";
-    int quantity = 12;
+    int quantity = 14;
     Bread newBread = new Bread(breadType,quantity);
 
     //Act
-    int costOfTwoLoaf = 40;
+    int costOfTwoLoaf = 50;
     int result = newBread.CostOfBreadOrder();
 
     //Assert

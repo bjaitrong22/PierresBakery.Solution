@@ -19,15 +19,11 @@ namespace PierresBakery
         int cost = NumberOfLoaves * 5;
         return cost;
       }
-      else if ( NumberOfLoaves % 3 == 0)
+      else
       {
-        int cost = (NumberOfLoaves/3) * 10;
+        int cost = (NumberOfLoaves/3) * 10 + (NumberOfLoaves % 3) * 5;
         return cost;
       }
-      {
-        return 0;
-      }
-      ;
-    }
+    } 
   }
 }
