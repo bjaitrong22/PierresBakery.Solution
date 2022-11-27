@@ -29,5 +29,21 @@ namespace PierresBakery.TestTools
     //Assert
     Assert.AreEqual(type,PastryType);
    }
+
+   [TestMethod]
+   public void SetTypeOfPastry_SetTypeOfPastry_String()
+   {
+    //Arrange
+    string pastryType = "Flaky";
+    Pastry newPastry = new Pastry(pastryType);
+
+    //Act
+    string updatePastryType = "Shortcrust";
+    newPastry.TypeOfPastry = updatePastryType;
+    string result = newPastry.TypeOfPastry;
+
+    //Assert
+    Assert.AreEqual(updatePastryType,result);
+   }
   }
 }
