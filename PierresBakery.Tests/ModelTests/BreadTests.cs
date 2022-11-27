@@ -113,5 +113,23 @@ namespace PierresBakery.TestTools
     //Assert
     Assert.AreEqual(costOfTwoLoaf,result);
    }
+
+   [TestMethod]
+   public void CostOfBreadOrder_ReturnsCostOfBreadOrderForMultipleOfThree_Int()
+   {
+    //Arrange
+    string breadType = "Sourdough";
+    int quantity = 12;
+    Bread newBread = new Bread(breadType,quantity);
+
+    //Act
+    int costOfTwoLoaf = 40;
+    int result = newBread.CostOfBreadOrder();
+
+    //Assert
+    Assert.AreEqual(costOfTwoLoaf,result);
+   }
+
+
   }
 }
