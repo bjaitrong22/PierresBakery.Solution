@@ -38,12 +38,16 @@ namespace PierresBakery
       Console.WriteLine(singleLoaf);
 
       //Pastry Prices
-      string pastryHeading = "Pastries";
+      string pastryHeading = "PASTRIES";
       string singlePastry = "One: $2";
       string triplePastry = "Three: $5";
       string quadruplePastry = "Four: $7";
       string quintuplePastry = "Five: $9";
       string sextuplePastry = "Six: $10";
+
+      int numberOfLoaves = 0;
+      int numberOfPastries = 0;
+
 
 
       Console.ForegroundColor = ConsoleColor.Blue;
@@ -73,14 +77,25 @@ namespace PierresBakery
 
 
       Console.WriteLine("\n");
-      Console.WriteLine("How many Loaves of Bread would you like?");
-      string breadOrder = Console.ReadLine();
-      int numberOfLoaves = int.Parse(breadOrder);
 
-      Console.WriteLine("How many Pastries would you like?");
-      string pastryOrder = Console.ReadLine();
-      int numberOfPastries = int.Parse(pastryOrder);
+      try
+      {
+        Console.WriteLine("How many Loaves of Bread would you like?");
+        string breadOrder = Console.ReadLine();
 
+        Console.WriteLine("How many Pastries would you like?");
+        string pastryOrder = Console.ReadLine();
+
+        numberOfLoaves = Math.Abs(int.Parse(breadOrder));
+        numberOfPastries = Math.Abs(int.Parse(pastryOrder));
+      }
+        catch(Exception ex)
+      {
+        Console.WriteLine("Message= {0}", ex.Message);
+        Console.WriteLine("Please enter only whole numbers.\n");
+        return;
+      }
+      
       Bread yourBreadOrder = new Bread(breadType,numberOfLoaves);
       Pastry yourPastryOrder = new Pastry(pastryType,numberOfPastries);
 

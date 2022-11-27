@@ -79,7 +79,7 @@ namespace PierresBakery.TestTools
    }
 
    [TestMethod]
-   public void CostOfPastryOrder_ReturnsCostOfOneToTwoPastryOrder_Int()
+   public void CostOfPastryOrder_ReturnsCostOfLessthanThreePastryOrder_Int()
    {
     //Arrange
     string type = "Choux";
