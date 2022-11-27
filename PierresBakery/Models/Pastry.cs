@@ -14,7 +14,14 @@ namespace PierresBakery
 
     public int CostOfPastryOrder()
     {
-      return 0;
+      if (NumberOfPastry == 1)
+      {
+        return 2;
+      }
+      else
+      {
+        return 0;
+      }  
     }
   }
 }
