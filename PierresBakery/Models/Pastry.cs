@@ -11,5 +11,10 @@ namespace PierresBakery
         TypeOfPastry = pastryType;
         NumberOfPastry = quantity;
       } 
+
+    public int CostOfPastryOrder()
+    {
+      return 0;
+    }
   }
 }
