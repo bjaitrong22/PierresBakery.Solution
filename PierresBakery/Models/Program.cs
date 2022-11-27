@@ -66,7 +66,33 @@ namespace PierresBakery
 
       Console.SetCursorPosition((Console.WindowWidth - triplePastry.Length) / 2, Console.CursorTop);
       Console.WriteLine(singlePastry);
+
+      //Order Request and Input
+      string breadType = "sourdough";
+      string pastryType = "Choux";
+
+
+      Console.WriteLine("\n");
+      Console.WriteLine("How many Loaves of Bread would you like?");
+      string breadOrder = Console.ReadLine();
+      int numberOfLoaves = int.Parse(breadOrder);
+
+      Console.WriteLine("How many Pastries would you like?");
+      string pastryOrder = Console.ReadLine();
+      int numberOfPastries = int.Parse(pastryOrder);
+
+      Bread yourBreadOrder = new Bread(breadType,numberOfLoaves);
+      Pastry yourPastryOrder = new Pastry(pastryType,numberOfPastries);
+
+      int totalCost = yourBreadOrder.CostOfBreadOrder() + yourPastryOrder.CostOfPastryOrder();
+
+      Console.WriteLine("\n");
+      Console.WriteLine(yourBreadOrder.NumberOfLoaves + " loaf/Loaves of Bread");
+      Console.WriteLine(yourPastryOrder.NumberOfPastry + " Pastry/Pastries.");
+      Console.WriteLine("________________");
+      Console.WriteLine("Total cost: " + "$" + totalCost); 
+
+      Console.WriteLine("\n\n");
     }
   }
-
 }
