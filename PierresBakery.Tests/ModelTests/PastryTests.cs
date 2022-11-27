@@ -45,5 +45,20 @@ namespace PierresBakery.TestTools
     //Assert
     Assert.AreEqual(updatePastryType,result);
    }
+
+   [TestMethod]
+   public void GetNumberOfPastry_ReturnsNumberOfPastry_Int()
+   {
+    //Arrange
+    string type = "multigrain";
+    int quantity = 2;
+    Pastry newPastry = new Pastry(type,quantity);
+
+    //Act
+    int result = newPastry.NumberOfPastry;
+
+    //Assert
+    Assert.AreEqual(quantity,result);
+   }
   }
 }
