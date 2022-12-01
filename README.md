@@ -111,7 +111,7 @@ It will then ask the user to enter how many Pastries and Loaves of bread they wo
 
      * Navigate to the subdirectroy PierresBakery.Solution/PierresBakery using your command line.
      * First, run the command "dotnet build".
-     * afterwards,run the command "dotnet run".
+     * Afterwards,run the command "dotnet run".
     
 ## Known Bugs
 
