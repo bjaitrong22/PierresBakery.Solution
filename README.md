@@ -101,12 +101,11 @@ It will then ask the user to enter how many Pastries and Loaves of bread they wo
     * Navigate to the subdirectroy PierresBakery.Solution/PierresBakery.Tests using your command line.
     * To install the required packages listed in PierresBakery.Tests.csproj file, run the command "dotnet restore".
      
-    note: the command will automtically create new obj directories in the PierresBakery and PierresBakery.Tests subdirectories. Do not touch these files. If they are deleted by accident or updates to one of .csproj files or both , you can follow step 12 and run the "dotnet restore" again to restore the files or apply the updates form the .csproj file.  
+    note: the command will automtically create new obj directories in the PierresBakery and PierresBakery.Tests subdirectories. Do not touch these files. If they are deleted by accident or updates are made to one of .csproj files or both , you can follow step 12 and run the "dotnet restore" again to restore the files or apply the updates form the .csproj file.  
 
     Also, leave out the quotes when running the terminal commands. The quotes are just for emphasis.
 
     * You can now run the test that has already been put in place by running the command "dotnet test" in the subdirectory PierresBakery.Solution/PierresBakery.Tests. 
-
   
 11. To build and run the project using MSBuild:
 
