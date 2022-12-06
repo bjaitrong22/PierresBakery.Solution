@@ -6,7 +6,7 @@ PierresBakery.Solution
 
 PierresBakery.Solution is a console application that accepts Bread and Pastry orders. After the user enters the number of loaves of bread and/or Pastries, the application will print out the order and total cost.
 
-#### Contributor
+#### Author
 
 By Bai Jaitrong
 
@@ -55,8 +55,8 @@ It will then ask the user to enter how many Pastries and Loaves of bread they wo
 
     git remote -v
 
-    bj	https://github.com/bjaitrong22/currency-exchanger.git (fetch)
-    bj	https://github.com/bjaitrong22/currency-exchanger.git (push)
+    bj  https://github.com/bjaitrong22/PierresBakery.Solution.git (fetch)
+    bj  https://github.com/bjaitrong22/PierresBakery.Solution.git (push)
 
     * you will get a response above, and the remote repository's nick name/identifier is bj or you may see it as origin.
 
@@ -72,7 +72,7 @@ It will then ask the user to enter how many Pastries and Loaves of bread they wo
       
     * Nothing should show up. That means the remote has been removed. If it hasn't been removed correctly, return to step 4. & 5. 
       
-7. Enter 
+7. Now you can add your remote repository by running the command below (be sure to remove the brackets) using your project's git repository url.  
 
     git remote add origin [your-project-url-here]. 
       
